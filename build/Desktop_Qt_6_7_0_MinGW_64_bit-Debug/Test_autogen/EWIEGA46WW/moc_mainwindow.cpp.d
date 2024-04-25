@@ -6,11 +6,13 @@ D:/Sourcecode/QtProjects/Test/build/Desktop_Qt_6_7_0_MinGW_64_bit-Debug/Test_aut
   D:/Programs/Qt/6.7.0/mingw_64/include/QtCore/QRegularExpression \
   D:/Programs/Qt/6.7.0/mingw_64/include/QtCore/QString \
   D:/Programs/Qt/6.7.0/mingw_64/include/QtCore/QStringList \
+  D:/Programs/Qt/6.7.0/mingw_64/include/QtCore/QStringListModel \
   D:/Programs/Qt/6.7.0/mingw_64/include/QtCore/QTextStream \
   D:/Programs/Qt/6.7.0/mingw_64/include/QtCore/q20functional.h \
   D:/Programs/Qt/6.7.0/mingw_64/include/QtCore/q20memory.h \
   D:/Programs/Qt/6.7.0/mingw_64/include/QtCore/q20type_traits.h \
   D:/Programs/Qt/6.7.0/mingw_64/include/QtCore/q23utility.h \
+  D:/Programs/Qt/6.7.0/mingw_64/include/QtCore/qabstractitemmodel.h \
   D:/Programs/Qt/6.7.0/mingw_64/include/QtCore/qalgorithms.h \
   D:/Programs/Qt/6.7.0/mingw_64/include/QtCore/qanystringview.h \
   D:/Programs/Qt/6.7.0/mingw_64/include/QtCore/qarraydata.h \
@@ -101,6 +103,7 @@ D:/Sourcecode/QtProjects/Test/build/Desktop_Qt_6_7_0_MinGW_64_bit-Debug/Test_aut
   D:/Programs/Qt/6.7.0/mingw_64/include/QtCore/qstringconverter_base.h \
   D:/Programs/Qt/6.7.0/mingw_64/include/QtCore/qstringfwd.h \
   D:/Programs/Qt/6.7.0/mingw_64/include/QtCore/qstringlist.h \
+  D:/Programs/Qt/6.7.0/mingw_64/include/QtCore/qstringlistmodel.h \
   D:/Programs/Qt/6.7.0/mingw_64/include/QtCore/qstringliteral.h \
   D:/Programs/Qt/6.7.0/mingw_64/include/QtCore/qstringmatcher.h \
   D:/Programs/Qt/6.7.0/mingw_64/include/QtCore/qstringtokenizer.h \
@@ -165,6 +168,7 @@ D:/Sourcecode/QtProjects/Test/build/Desktop_Qt_6_7_0_MinGW_64_bit-Debug/Test_aut
   D:/Programs/Qt/6.7.0/mingw_64/include/QtGui/qtransform.h \
   D:/Programs/Qt/6.7.0/mingw_64/include/QtGui/qwindowdefs.h \
   D:/Programs/Qt/6.7.0/mingw_64/include/QtGui/qwindowdefs_win.h \
+  D:/Programs/Qt/6.7.0/mingw_64/include/QtWidgets/QCompleter \
   D:/Programs/Qt/6.7.0/mingw_64/include/QtWidgets/QFileDialog \
   D:/Programs/Qt/6.7.0/mingw_64/include/QtWidgets/QMainWindow \
   D:/Programs/Qt/6.7.0/mingw_64/include/QtWidgets/QMessageBox \
@@ -172,6 +176,7 @@ D:/Sourcecode/QtProjects/Test/build/Desktop_Qt_6_7_0_MinGW_64_bit-Debug/Test_aut
   D:/Programs/Qt/6.7.0/mingw_64/include/QtWidgets/QTextEdit \
   D:/Programs/Qt/6.7.0/mingw_64/include/QtWidgets/qabstractbutton.h \
   D:/Programs/Qt/6.7.0/mingw_64/include/QtWidgets/qabstractscrollarea.h \
+  D:/Programs/Qt/6.7.0/mingw_64/include/QtWidgets/qcompleter.h \
   D:/Programs/Qt/6.7.0/mingw_64/include/QtWidgets/qdialog.h \
   D:/Programs/Qt/6.7.0/mingw_64/include/QtWidgets/qdialogbuttonbox.h \
   D:/Programs/Qt/6.7.0/mingw_64/include/QtWidgets/qfiledialog.h \

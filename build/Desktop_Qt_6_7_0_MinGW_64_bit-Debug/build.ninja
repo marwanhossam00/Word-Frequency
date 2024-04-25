@@ -73,6 +73,14 @@ build CMakeFiles/Test.dir/mainwindow.cpp.obj: CXX_COMPILER__Test_unscanned_Debug
   OBJECT_DIR = CMakeFiles\Test.dir
   OBJECT_FILE_DIR = CMakeFiles\Test.dir
 
+build CMakeFiles/Test.dir/trie.cpp.obj: CXX_COMPILER__Test_unscanned_Debug D$:/Sourcecode/QtProjects/Test/trie.cpp || cmake_object_order_depends_target_Test
+  DEFINES = -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NEEDS_QMAIN -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64
+  DEP_FILE = CMakeFiles\Test.dir\trie.cpp.obj.d
+  FLAGS = -DQT_QML_DEBUG -g -std=gnu++17 -fdiagnostics-color=always
+  INCLUDES = -ID:/Sourcecode/QtProjects/Test/build/Desktop_Qt_6_7_0_MinGW_64_bit-Debug/Test_autogen/include -isystem D:/Programs/Qt/6.7.0/mingw_64/include/QtCore -isystem D:/Programs/Qt/6.7.0/mingw_64/include -isystem D:/Programs/Qt/6.7.0/mingw_64/mkspecs/win32-g++ -isystem D:/Programs/Qt/6.7.0/mingw_64/include/QtWidgets -isystem D:/Programs/Qt/6.7.0/mingw_64/include/QtGui
+  OBJECT_DIR = CMakeFiles\Test.dir
+  OBJECT_FILE_DIR = CMakeFiles\Test.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target Test
@@ -81,7 +89,7 @@ build CMakeFiles/Test.dir/mainwindow.cpp.obj: CXX_COMPILER__Test_unscanned_Debug
 #############################################
 # Link the executable Test.exe
 
-build Test.exe: CXX_EXECUTABLE_LINKER__Test_Debug CMakeFiles/Test.dir/Test_autogen/mocs_compilation.cpp.obj CMakeFiles/Test.dir/main.cpp.obj CMakeFiles/Test.dir/mainwindow.cpp.obj | D$:/Programs/Qt/6.7.0/mingw_64/lib/libQt6Widgets.a D$:/Programs/Qt/6.7.0/mingw_64/lib/libQt6Gui.a D$:/Programs/Qt/6.7.0/mingw_64/lib/libQt6Core.a D$:/Programs/Qt/6.7.0/mingw_64/lib/libQt6EntryPoint.a || Test_autogen Test_autogen_timestamp_deps
+build Test.exe: CXX_EXECUTABLE_LINKER__Test_Debug CMakeFiles/Test.dir/Test_autogen/mocs_compilation.cpp.obj CMakeFiles/Test.dir/main.cpp.obj CMakeFiles/Test.dir/mainwindow.cpp.obj CMakeFiles/Test.dir/trie.cpp.obj | D$:/Programs/Qt/6.7.0/mingw_64/lib/libQt6Widgets.a D$:/Programs/Qt/6.7.0/mingw_64/lib/libQt6Gui.a D$:/Programs/Qt/6.7.0/mingw_64/lib/libQt6Core.a D$:/Programs/Qt/6.7.0/mingw_64/lib/libQt6EntryPoint.a || Test_autogen Test_autogen_timestamp_deps
   FLAGS = -DQT_QML_DEBUG -g
   LINK_FLAGS = -mwindows
   LINK_LIBRARIES = D:/Programs/Qt/6.7.0/mingw_64/lib/libQt6Widgets.a  D:/Programs/Qt/6.7.0/mingw_64/lib/libQt6Gui.a  D:/Programs/Qt/6.7.0/mingw_64/lib/libQt6Core.a  -lmpr  -luserenv  -lmingw32  D:/Programs/Qt/6.7.0/mingw_64/lib/libQt6EntryPoint.a  -lshell32  -ld3d11  -ldxgi  -ldxguid  -ld3d12  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
@@ -184,7 +192,7 @@ build Test_autogen/timestamp Test_autogen/mocs_compilation.cpp | ${cmake_ninja_w
 #############################################
 # Phony custom command for CMakeFiles\Test_autogen_timestamp_deps
 
-build CMakeFiles/Test_autogen_timestamp_deps | ${cmake_ninja_workdir}CMakeFiles/Test_autogen_timestamp_deps: phony D$:/Programs/Qt/6.7.0/mingw_64/./bin/uic.exe D$:/Programs/Qt/6.7.0/mingw_64/./bin/moc.exe D$:/Programs/Qt/6.7.0/mingw_64/lib/libQt6Core.a D$:/Programs/Qt/6.7.0/mingw_64/lib/libQt6Widgets.a
+build CMakeFiles/Test_autogen_timestamp_deps | ${cmake_ninja_workdir}CMakeFiles/Test_autogen_timestamp_deps: phony D$:/Programs/Qt/6.7.0/mingw_64/./bin/moc.exe D$:/Programs/Qt/6.7.0/mingw_64/./bin/uic.exe D$:/Programs/Qt/6.7.0/mingw_64/lib/libQt6Widgets.a D$:/Programs/Qt/6.7.0/mingw_64/lib/libQt6Core.a
 
 
 #############################################

@@ -73,10 +73,20 @@ void MainWindow::countWordFrequency()
     while(it != wordFreq.end()){
         QString key = it.key();
         int value = it.value();
+        wordsList.append(key);
         display += (key + ": " + QString::number(value));
         display += "\n";
         ++it;
     }
-
     ui->textEdit_2->setPlainText(display);
 }
+
+void MainWindow::on_lineEdit_textChanged(const QString &arg1)
+{
+    completer = new QCompleter(this);
+    completer->setCaseSensitivity(Qt::CaseInsensitive);
+    completer->setCompletionMode(QCompleter::InlineCompletion);
+    completer->setModel(new QStringListModel(wordsList, this));
+    ui->lineEdit->setCompleter(completer);
+}
+

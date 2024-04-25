@@ -7,11 +7,13 @@ D:/Sourcecode/QtProjects/Test/mainwindow.h
  mdp:D:/Programs/Qt/6.7.0/mingw_64/include/QtCore/QRegularExpression
  mdp:D:/Programs/Qt/6.7.0/mingw_64/include/QtCore/QString
  mdp:D:/Programs/Qt/6.7.0/mingw_64/include/QtCore/QStringList
+ mdp:D:/Programs/Qt/6.7.0/mingw_64/include/QtCore/QStringListModel
  mdp:D:/Programs/Qt/6.7.0/mingw_64/include/QtCore/QTextStream
  mdp:D:/Programs/Qt/6.7.0/mingw_64/include/QtCore/q20functional.h
  mdp:D:/Programs/Qt/6.7.0/mingw_64/include/QtCore/q20memory.h
  mdp:D:/Programs/Qt/6.7.0/mingw_64/include/QtCore/q20type_traits.h
  mdp:D:/Programs/Qt/6.7.0/mingw_64/include/QtCore/q23utility.h
+ mdp:D:/Programs/Qt/6.7.0/mingw_64/include/QtCore/qabstractitemmodel.h
  mdp:D:/Programs/Qt/6.7.0/mingw_64/include/QtCore/qalgorithms.h
  mdp:D:/Programs/Qt/6.7.0/mingw_64/include/QtCore/qanystringview.h
  mdp:D:/Programs/Qt/6.7.0/mingw_64/include/QtCore/qarraydata.h
@@ -102,6 +104,7 @@ D:/Sourcecode/QtProjects/Test/mainwindow.h
  mdp:D:/Programs/Qt/6.7.0/mingw_64/include/QtCore/qstringconverter_base.h
  mdp:D:/Programs/Qt/6.7.0/mingw_64/include/QtCore/qstringfwd.h
  mdp:D:/Programs/Qt/6.7.0/mingw_64/include/QtCore/qstringlist.h
+ mdp:D:/Programs/Qt/6.7.0/mingw_64/include/QtCore/qstringlistmodel.h
  mdp:D:/Programs/Qt/6.7.0/mingw_64/include/QtCore/qstringliteral.h
  mdp:D:/Programs/Qt/6.7.0/mingw_64/include/QtCore/qstringmatcher.h
  mdp:D:/Programs/Qt/6.7.0/mingw_64/include/QtCore/qstringtokenizer.h
@@ -166,6 +169,7 @@ D:/Sourcecode/QtProjects/Test/mainwindow.h
  mdp:D:/Programs/Qt/6.7.0/mingw_64/include/QtGui/qtransform.h
  mdp:D:/Programs/Qt/6.7.0/mingw_64/include/QtGui/qwindowdefs.h
  mdp:D:/Programs/Qt/6.7.0/mingw_64/include/QtGui/qwindowdefs_win.h
+ mdp:D:/Programs/Qt/6.7.0/mingw_64/include/QtWidgets/QCompleter
  mdp:D:/Programs/Qt/6.7.0/mingw_64/include/QtWidgets/QFileDialog
  mdp:D:/Programs/Qt/6.7.0/mingw_64/include/QtWidgets/QMainWindow
  mdp:D:/Programs/Qt/6.7.0/mingw_64/include/QtWidgets/QMessageBox
@@ -173,6 +177,7 @@ D:/Sourcecode/QtProjects/Test/mainwindow.h
  mdp:D:/Programs/Qt/6.7.0/mingw_64/include/QtWidgets/QTextEdit
  mdp:D:/Programs/Qt/6.7.0/mingw_64/include/QtWidgets/qabstractbutton.h
  mdp:D:/Programs/Qt/6.7.0/mingw_64/include/QtWidgets/qabstractscrollarea.h
+ mdp:D:/Programs/Qt/6.7.0/mingw_64/include/QtWidgets/qcompleter.h
  mdp:D:/Programs/Qt/6.7.0/mingw_64/include/QtWidgets/qdialog.h
  mdp:D:/Programs/Qt/6.7.0/mingw_64/include/QtWidgets/qdialogbuttonbox.h
  mdp:D:/Programs/Qt/6.7.0/mingw_64/include/QtWidgets/qfiledialog.h
@@ -775,3 +780,5 @@ D:/Sourcecode/QtProjects/Test/simplewindow.h
 D:/Sourcecode/QtProjects/Test/simplewindow.cpp
 D:/Sourcecode/QtProjects/Test/newwindow.h
 D:/Sourcecode/QtProjects/Test/newwindow.cpp
+D:/Sourcecode/QtProjects/Test/trie.h
+D:/Sourcecode/QtProjects/Test/trie.cpp

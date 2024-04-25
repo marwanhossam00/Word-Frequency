@@ -299,6 +299,12 @@
 			"MU",
 			"EWIEGA46WW/moc_mainwindow.cpp",
 			null
+		],
+		[
+			"D:/Sourcecode/QtProjects/Test/trie.h",
+			"MU",
+			"EWIEGA46WW/moc_trie.cpp",
+			null
 		]
 	],
 	"HEADER_EXTENSIONS" : [ "h", "hh", "h++", "hm", "hpp", "hxx", "in", "txx" ],
@@ -373,7 +379,8 @@
 	"SOURCES" : 
 	[
 		[ "D:/Sourcecode/QtProjects/Test/main.cpp", "MU", null ],
-		[ "D:/Sourcecode/QtProjects/Test/mainwindow.cpp", "MU", null ]
+		[ "D:/Sourcecode/QtProjects/Test/mainwindow.cpp", "MU", null ],
+		[ "D:/Sourcecode/QtProjects/Test/trie.cpp", "MU", null ]
 	],
 	"UIC_OPTIONS" : [],
 	"UIC_SEARCH_PATHS" : [],
