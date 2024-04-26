@@ -6,6 +6,7 @@
 #include <QTextEdit>
 #include <QMap>
 #include <QPair>
+#include <QList>
 #include <QMessageBox>
 #include <QFile>
 #include <QTextStream>
@@ -15,6 +16,8 @@
 #include <QRegularExpression>
 #include <QCompleter>
 #include <QStringListModel>
+#include <bits/stdc++.h>
+#include <algorithm>
 
 QT_BEGIN_NAMESPACE
 namespace Ui {
@@ -36,9 +39,7 @@ private slots:
 
     void on_lineEdit_textChanged(const QString &arg1);
 
-    void on_lineEdit_customContextMenuRequested(const QPoint &pos);
-
-    void on_lineEdit_textEdited(const QString &arg1);
+    void on_pushButton_2_clicked();
 
 private:
     Ui::MainWindow *ui;
@@ -46,6 +47,7 @@ private:
     QString currentFilePath;
     QStringList wordsList;
     QMap<QString, int> wordFreq;
+    bool compareByValue(const QPair<QString, int> &a, const QPair<QString, int> &b);
     void countWordFrequency();
 };
 #endif // MAINWINDOW_H

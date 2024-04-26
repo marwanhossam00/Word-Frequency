@@ -66,18 +66,23 @@ void MainWindow::countWordFrequency()
     for(const QString &word:words)
         wordFreq[word.toLower()]++;
 
-    auto it = wordFreq.begin();
+    std::vector<std::pair<QString, int>> wordsSorted;
+    for(auto it = wordFreq.begin(); it != wordFreq.end(); it++){
+        wordsSorted.push_back({it.key(), it.value()});
+    }
+    std::sort(wordsSorted.begin(), wordsSorted.end(), [](const auto &a, const auto &b){
+        return a.second > b.second;
+    });
 
     QString display;
 
-    while(it != wordFreq.end()){
-        QString key = it.key();
-        int value = it.value();
-        wordsList.append(key);
+    for(auto & x: wordsSorted){
+        QString key = x.first;
+        int value = x.second;
         display += (key + ": " + QString::number(value));
         display += "\n";
-        ++it;
     }
+
     ui->textEdit_2->setPlainText(display);
 }
 
@@ -88,5 +93,14 @@ void MainWindow::on_lineEdit_textChanged(const QString &arg1)
     completer->setCompletionMode(QCompleter::InlineCompletion);
     completer->setModel(new QStringListModel(wordsList, this));
     ui->lineEdit->setCompleter(completer);
+}
+
+
+void MainWindow::on_pushButton_2_clicked()
+{
+    QString key = ui->lineEdit->text();
+    int freq = wordFreq[key];
+    if(!freq)   ui->textEdit_2->setPlainText("The paragraph does not contain this word.");
+    else    ui->textEdit_2->setPlainText(key + ": " + QString::number(freq));
 }
 
