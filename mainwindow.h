@@ -41,13 +41,18 @@ private slots:
 
     void on_pushButton_2_clicked();
 
+    void on_pushButton_clicked();
+
 private:
     Ui::MainWindow *ui;
     QCompleter *completer;
     QString currentFilePath;
     QStringList wordsList;
+    QMap<QString, int> rank;
+    std::vector<std::pair<QString, int>> wordsSorted;
     QMap<QString, int> wordFreq;
     bool compareByValue(const QPair<QString, int> &a, const QPair<QString, int> &b);
     void countWordFrequency();
+    void rankCount();
 };
 #endif // MAINWINDOW_H

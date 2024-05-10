@@ -14,26 +14,30 @@ MainWindow::~MainWindow()
     delete ui;
 }
 
+//Mariem Ali
 void MainWindow::on_actionOpen_triggered()
 {
+    // Upload file
     currentFilePath = QFileDialog::getOpenFileName(this,tr("Open File"),"",tr("Text Files (*.txt)"));
-    if(currentFilePath.isEmpty())
-        return;
 
     QFile file(currentFilePath);
+
     if(!file.open(QIODevice::ReadOnly | QIODevice::Text)){
         QMessageBox::warning(this, tr("Error"), tr("Could not open file."));
         return;
     }
 
+    //Display on GUI TextEditor
     QString content = file.readAll();
 
     file.close();
 
+    //GUI Display
     ui->textEdit->setPlainText(content);
 }
 
-
+//Process Button
+//Khaled
 void MainWindow::on_pushButton_3_clicked()
 {
     if(currentFilePath.isEmpty())   return;
@@ -44,6 +48,7 @@ void MainWindow::on_pushButton_3_clicked()
         QMessageBox::warning(this, tr("Error"), tr("Could not save file"));
         return;
     }
+
     QString content = ui->textEdit->toPlainText();
 
     QTextStream out(&file);
@@ -52,8 +57,27 @@ void MainWindow::on_pushButton_3_clicked()
     file.close();
 
     MainWindow::countWordFrequency();
+    MainWindow::rankCount();
 }
 
+//Marwan & Moussab
+void MainWindow::rankCount()
+{
+    int highestRank = wordsSorted[0].second;
+    int rankNum = 1;
+
+    for(auto& x: wordsSorted){
+        if(x.second != highestRank){
+            highestRank = x.second;
+            rankNum++;
+            rank[x.first] = rankNum;
+        }
+        else
+            rank[x.first] = rankNum;
+    }
+}
+
+//Marwan & Mariem
 void MainWindow::countWordFrequency()
 {
     wordFreq.clear();
@@ -61,22 +85,25 @@ void MainWindow::countWordFrequency()
 
     QRegularExpression rx("[^a-zA-z]+");
 
-    QStringList words = content.split(rx, Qt::SkipEmptyParts);
+    wordsList = content.split(rx, Qt::SkipEmptyParts);
 
-    for(const QString &word:words)
+    std::vector<std::pair<QString, int>> tmp;
+
+    for(const QString &word:wordsList)
         wordFreq[word.toLower()]++;
 
-    std::vector<std::pair<QString, int>> wordsSorted;
-    for(auto it = wordFreq.begin(); it != wordFreq.end(); it++){
-        wordsSorted.push_back({it.key(), it.value()});
-    }
-    std::sort(wordsSorted.begin(), wordsSorted.end(), [](const auto &a, const auto &b){
+    for(auto it = wordFreq.begin(); it != wordFreq.end(); it++)
+        tmp.push_back({it.key(), it.value()});
+
+    std::sort(tmp.begin(), tmp.end(), [](const auto &a, const auto &b){
         return a.second > b.second;
     });
 
-    QString display;
+    wordsSorted = tmp;
 
-    for(auto & x: wordsSorted){
+    QString display = "";
+
+    for(auto & x: tmp){
         QString key = x.first;
         int value = x.second;
         display += (key + ": " + QString::number(value));
@@ -86,6 +113,7 @@ void MainWindow::countWordFrequency()
     ui->textEdit_2->setPlainText(display);
 }
 
+//Marwan
 void MainWindow::on_lineEdit_textChanged(const QString &arg1)
 {
     completer = new QCompleter(this);
@@ -96,11 +124,22 @@ void MainWindow::on_lineEdit_textChanged(const QString &arg1)
 }
 
 
+//Hazem
+//Display Frequency
 void MainWindow::on_pushButton_2_clicked()
 {
     QString key = ui->lineEdit->text();
     int freq = wordFreq[key];
     if(!freq)   ui->textEdit_2->setPlainText("The paragraph does not contain this word.");
     else    ui->textEdit_2->setPlainText(key + ": " + QString::number(freq));
+}
+
+//Hazem
+//Display Ranking
+void MainWindow::on_pushButton_clicked()
+{
+    QString query = ui->lineEdit->text();
+    if(rank[query])   ui->textEdit_2->setPlainText(query + ": " + QString::number(rank[query]));
+    else    ui->textEdit_2->setPlainText("The paragraph does not contain this word.");
 }
 
